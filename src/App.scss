@@ -1,0 +1,93 @@
+// .app-container .header-container .navbar-nav .nav-link.active {
+//     color: red;
+// }
+
+// hoac co the viet
+.app-container {
+    .header-container {
+        background-color: ghostwhite;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 123, 0, 0.5);
+
+        .navbar {
+            padding-top: 20px;
+            z-index: 10;
+            opacity: 0.6;
+
+            .btn-login {
+                border: 1px solid #767373;
+                margin-right: 14px;
+                padding: 5px 14px;
+                border-radius: 5px;
+            }
+
+            .btn-login:hover {
+                background-color: #767373;
+                color: #fff;
+            }
+
+            .btn-signUp {
+                border: 1px solid #303030;
+                padding: 5px 14px;
+                border-radius: 5px;
+                background-color: black;
+                color: #fff;
+            }
+
+            .btn-signUp:hover {
+                background-color: #ccc;
+                color: black;
+            }
+
+            .nav-link {
+                &.active {
+                    color: dodgerblue;
+                }
+            }
+        }
+    }
+
+    .homepage-container {
+
+        .homepage-content {
+            position: relative;
+            padding: 100px;
+            margin-top: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .homepage-content--title1 {
+                font-size: 50px;
+                color: black;
+                font-weight: 500;
+            }
+
+            .homepage-content--title2 {
+                font-size: 22px;
+                font-weight: 300;
+            }
+
+            .homepage-content--title3 {
+                button {
+                    border-radius: 10px;
+                    padding: 5px 14px;
+                    border-radius: 5px;
+                    background-color: black;
+                    color: #fff;
+                }
+
+                button:hover {
+                    background-color: #ccc;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+video {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
